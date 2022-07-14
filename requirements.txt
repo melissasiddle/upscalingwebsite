@@ -1,0 +1,6 @@
+streamlit
+numpy
+from matplotlib import pyplot
+PIL
+os
+io
