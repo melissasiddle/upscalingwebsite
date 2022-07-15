@@ -9,23 +9,12 @@ import streamlit.components.v1 as components
 from io import BytesIO
 # import model from wherever
 
-CSS = """
-h1 {
-    color: #C18C8C;
-}
-h2 {
-    color: #C18C8C;
-}
-.css-po3vlj {
-    color: #C18C8C;
-    border-radius: 30%;
-}
-"""
-
-st.write(f'<style>{CSS}</style>', unsafe_allow_html=True)
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 st.header("Pixel Perfect")
-st.write("We can upscale your image!")
+st.write("Upscale and enhance any image by using our SRGAN model.")
+st.write("It can used for anything! From preserving old media material to enhancing a microscope’s view, or identifying an individual in CCTV - super-resolution’s impact is widespread and extremely evident.")
 
 uploaded_file = st.file_uploader("Choose an image...")
 
@@ -148,3 +137,8 @@ if uploaded_file is not None:
       file_name="imagename.png",
       mime="image/jpeg",
       )
+
+with st.expander("How does it work?"):
+     st.write("""
+         To upscale your image, we use a SRGAN model to super-resolutionise your image with minimal information distortion.
+     """)

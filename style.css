@@ -1,0 +1,46 @@
+.css-10trblm {
+  /* border: 3px solid #f1c7c7;
+  background-color: #f2d6d6; */
+  position: relative;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  margin-left: calc(3rem);
+}
+h2 {
+  font-family: arial;
+  text-transform: capitalize;
+  font-weight: 1000;
+  font-size: 50px;
+  color: rgb(148, 79, 79);
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding: 1rem 0px;
+  margin: 0px;
+  /* line-height: 1; */
+}
+p, ol, ul, dl {
+  margin: 0px 0px 1rem;
+  padding: 0px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+.css-qrbaxs {
+  font-size: 14px;
+  color: rgb(158, 72, 72);
+  margin-bottom: 7px;
+  height: auto;
+  min-height: 1.5rem;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.css-po3vlj {
+  background-color: #ffffff;
+  border: 2px solid rgb(206, 199, 199);
+  padding: 5% 5% 5% 10%;
+  border-radius: 5px;
+}
